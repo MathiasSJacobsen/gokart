@@ -58,7 +58,7 @@ export const Navigation = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Sesong 1</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] bg-light gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[200px] bg-light gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
               {S1.map((component) => (
                 <ListItem
                   key={component.title}
@@ -72,7 +72,7 @@ export const Navigation = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Sesong 2</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] bg-light gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[200px] bg-light gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
               {S2.map((component) => (
                 <ListItem
                   key={component.title}
