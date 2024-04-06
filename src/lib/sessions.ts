@@ -6,6 +6,7 @@ import dbEight from "./data/seasonOne/sessionEight.json";
 import dbNine from "./data/seasonOne/sessionNine.json";
 
 import S2S1 from "./data/seasonTwo/sessionOne.json";
+import S2S2 from "./data/seasonTwo/sessionTwo.json";
 
 export const formatSessionToChartData = (data: {
   [key: number]: number[][];
@@ -96,8 +97,10 @@ export const getSessionSeasonTwo = (session?: number) => {
   switch (session) {
     case 1:
       return S2S1;
+    case 2:
+      return S2S2;
     default:
-      return [...S2S1];
+      return [...S2S1, ...S2S2];
   }
 };
 
@@ -110,7 +113,8 @@ export const getDateMap = (): { [key: string]: number } => {
     "10/10/23": 8,
     "17/10/23": 9,
     "2/5/23": 99, // utfordringen
-    "12/4/24": 10,
+    "12/3/24": 10,
+    "2/4/24": 11,
   };
 };
 

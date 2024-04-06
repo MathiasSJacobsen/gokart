@@ -44,6 +44,10 @@ export const Navigation = () => {
       title: "Løp 1",
       href: "/sesong/2/1",
     },
+    {
+      title: "Løp 2",
+      href: "/sesong/2/2",
+    },
   ];
   return (
     <NavigationMenu className="mx-auto">
