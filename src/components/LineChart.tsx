@@ -18,7 +18,7 @@ const LineChart = ({ data }: { data: Point[] }) => {
       <RechartsLineChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
-        <YAxis domain={[30, 50]} allowDataOverflow={true} />
+        <YAxis domain={[29, 40]} allowDataOverflow={true} />
         <Tooltip />
         <Legend />
         {Object.keys(data[0])
